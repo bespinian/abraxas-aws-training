@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+  build:
+    commands:
+      - pip install aws_lambda_powertools -t package/
+      - cp lambda_function.py package/
+      - cd package && zip -r9 ../lambda.zip .
+artifacts:
+  files:
+    - lambda.zip
