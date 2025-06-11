@@ -44,11 +44,22 @@ Confirm
 
 ## Use this config file
 ```yml
+regions:
+  - global
+  - us-east-1
+  - us-west-2
+  - eu-west-1
+
+account-blocklist:
+  - "000000000000" # <-- Replace with your actual root account ID if you want to protect it
+
 accounts:
-  <your-account-id>:
+  "nuke-target-account":
     filters:
       IAMUser:
-        - "admin-user"  # optionally exclude some resources
+        - "root"              # Do NOT try to delete the root user
+      IAMRole:
+        - "OrganizationAccountAccessRole" # Protect default org role
 ```
 
 ## Duke Nuke'em
