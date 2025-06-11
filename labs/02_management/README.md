@@ -609,6 +609,7 @@ When you set up a **Landing Zone**, AWS Control Tower performs the following act
 6. Confirm the structure:
    ```
    / (root)
+   ├──<YourCustomNameRootAccount>
    ├── management
    │ ├── security
    │ ├── configuration
@@ -616,6 +617,7 @@ When you set up a **Landing Zone**, AWS Control Tower performs the following act
    └── sandbox
      └── test
    ```
+6. Go to RAM, Setting and click 
 7. Allow now the following services in the org (in terraform it's the service principal field) for later org-wide service-usage:
    - Identity Center (terraform: `"sso.amazonaws.com"`)
    - Cloudtrail (terraform: `"cloudtrail.amazonaws.com"`)

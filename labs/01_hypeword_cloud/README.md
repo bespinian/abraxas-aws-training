@@ -17,11 +17,12 @@ aws --version
 ## Getting root Keys
 1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/).
 2. Enter your credentials to log in.
-3. To access root keys:
+3. Switch the region to eu-central-1
+4. To access root keys:
     - Go to My Security Credentials.
     - Select Access keys.
     - Create new access keys if you don’t have any.
-4. Export them
+5. Export them
 ```bash
 export AWS_ACCESS_KEY=<key>
 ```
@@ -29,7 +30,7 @@ export AWS_ACCESS_KEY=<key>
 export AWS_SECRET_ACCESS_KEY=<key>
 ```
 ## SSO Configure for Profiles
-
+This will be used LATER (after chapter 3). Don't do it before.   
 To configure SSO profiles for AWS CLI:
 1. Run the following command:
 ```bash

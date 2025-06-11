@@ -1113,6 +1113,7 @@ You can choose to monitor:
 ✅ KMS returns the original secret in plaintext.
 
 ### Best Practices
+
 ✅ Use customer-managed keys (CMKs) for sensitive workloads   
 ✅ Enable automatic rotation for CMKs   
 ✅ Audit key usage via CloudTrail   
